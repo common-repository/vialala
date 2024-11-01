@@ -1,0 +1,161 @@
+.vialala {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.vialala, .vialala div {
+	box-sizing: border-box;
+}
+
+.vialala.header {
+	color: white;
+	text-align: center;
+	padding: 25px 0;
+	margin-bottom: 0 !important;
+}
+
+.vialala.header a {
+	color: white;
+	text-decoration: none !important;
+}
+
+.vialala.header .label h5 {
+	font-size: 35px;
+    font-weight: 400;
+}
+
+.vialala.header h5 {
+	color: white;
+}
+
+.vialala.header .destination h2 {
+	font-weight: bold;
+    font-size: 75px;
+    line-height: 95px;
+    padding-bottom: 10px;
+	margin: 0;
+	color: white;
+}
+
+.vialala.header .destination h2:before {
+	display: none;
+}
+
+.vialala.header-bandeau {
+	margin-top: 0 !important;
+	font-size: 20px;
+    line-height: 20px;
+    background-color: #33cbcc;
+	padding: 20px ;
+}
+
+.vialala.header-bandeau a {
+	text-decoration: none !important;
+    color: white;
+}
+
+.vialala.header-bandeau .infos>div {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.vialala.include .type {
+	border-bottom: 1px solid #33cbcc;
+	padding: 5px;
+}
+
+.vialala.include .type .titre {
+	display: inline-block;
+	width: 25%;
+	padding-right: 10px;
+	vertical-align: top;
+}
+
+.vialala.include .type .desc {
+	display: inline-block;
+	width: 74%;
+}
+
+.vialala.travel .prestation {
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+
+.vialala.travel .day h5 {
+	margin: 0.5rem 0;
+}
+
+.vialala.travel .day .toggle {
+	display: none;
+}
+
+.vialala.travel .day .prestations {
+	max-height: 0;
+	overflow: hidden;
+	transition: height 1s ease-in-out;
+}
+
+.vialala.travel .day .prestations-container {
+	padding: 10px 0;
+}
+
+.vialala.travel .day .day-toggle label:hover {
+	cursor: pointer;
+}
+
+.vialala.travel .day .day-toggle label:before {
+	content: '+';
+	padding-right: 5px;
+	color: #33cbcc;
+}
+
+.vialala.travel .day .toggle:checked + .day-toggle + .prestations {
+	max-height: none !important;
+}
+
+.vialala.travel .day .toggle:checked + .day-toggle label:before {
+	content: '-';
+}
+
+.vialala.travel .total {
+	margin-top: 10px;
+}
+
+.vialala.travel small {
+	display: block;
+    line-height: 1;
+	margin-top: 10px;
+}
+
+.button-vialala {
+	background-color: #33cbcc !important;
+    color: white !important;font-size: 20px;
+    height: auto !important;
+    width: auto !important;border: none !important;
+    border-radius: 2px;
+    line-height: 1.5;display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+	padding: 0.7rem 1.4rem;
+	text-decoration: none !important;
+}
+
+@media(max-width:767.98px) {
+	.vialala.header .destination h2 {
+		font-size: 55px;
+		line-height: 65px;
+	}
+}
+
+@media(max-width:575.98px) {
+	.vialala.header .destination h2 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	
+	.vialala.include .type .titre,
+	.vialala.include .type .desc {
+		width: 100%;
+	}
+}
